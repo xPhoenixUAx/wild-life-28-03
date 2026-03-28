@@ -100,7 +100,7 @@
         <a href="contact.html" aria-current="page">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="cookie-policy.html">Cookie Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="terms.html">Terms of Service</a>
       </nav>
       <div class="mobile-menu__meta">
         <p>Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
@@ -117,15 +117,12 @@
           <h1>Share the wildlife issue and connect with local service options.</h1>
           <p>Use the form below to describe the animal involved, affected area, and visible signs such as noises, droppings, odors, or roof damage.</p>
         </div>
-        <div class="image-placeholder" role="img" aria-label="Homeowner filling out a wildlife service request form at a clean kitchen table - bright lifestyle scene">
-          [IMAGE: Homeowner filling out a wildlife service request form at a clean kitchen table - bright lifestyle scene]
-        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <form class="contact-form">
+        <form class="contact-form" data-contact-form>
           <label>Full Name<input type="text" name="name" placeholder="Your name"></label>
           <label>Email Address<input type="email" name="email" placeholder="name@example.com"></label>
           <label>Phone Number<input type="tel" name="phone" placeholder="(555) 555-5555"></label>
@@ -142,13 +139,25 @@
             </select>
           </label>
           <label>Describe the issue<textarea name="message" rows="6" placeholder="Example: scratching in attic at night, torn soffit near rear dormer, odor near hallway ceiling."></textarea></label>
-          <button class="button" type="submit"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><span>Submit Request</span></button>
+          <button class="button" type="submit"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><span>Send Request</span></button>
+          <p class="contact-form__note">Share the main signs, the affected area, and the animal type to help prepare a clearer follow-up.</p>
         </form>
 
         <aside class="contact-sidebar">
           <article class="line-card">
             <h2>Common details to include</h2>
             <p>Animal type, where the issue is happening, when activity is most noticeable, and whether droppings, odor, insulation damage, or turf disturbance are visible.</p>
+          </article>
+          <article class="line-card contact-map-card">
+            <h2>Service Area Map</h2>
+            <p>Wildlife Control Connect serves homeowners across the United States through independent local provider connections based on service area coverage and availability.</p>
+            <div class="contact-map-frame">
+              <iframe
+                title="Wildlife Control Connect service area map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-127.5%2C23.5%2C-65.5%2C50.5&amp;layer=mapnik"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </article>
           <article class="line-card">
             <h2>Typical service topics</h2>
@@ -158,6 +167,19 @@
       </div>
     </section>
   </main>
+
+  <div class="contact-modal" data-contact-modal hidden>
+    <div class="contact-modal__backdrop" data-contact-modal-close></div>
+    <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <p class="eyebrow">Request Confirmation</p>
+      <h2 id="contact-modal-title">Your request has been submitted.</h2>
+      <p>Thank you. Your request has been received. A local follow-up can depend on provider availability, service area, and the details shared in your form.</p>
+      <div class="contact-modal__actions">
+        <a class="button" href="services.html"><i class="fa-solid fa-paw" aria-hidden="true"></i><span>Browse Services</span></a>
+        <button class="button button-secondary" type="button" data-contact-modal-close><span>Close</span></button>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -177,7 +199,7 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="cookie-policy.html">Cookie Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="terms.html">Terms of Service</a>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -191,6 +213,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

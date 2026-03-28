@@ -4,6 +4,9 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const menuClose = document.querySelector("[data-menu-close]");
 const menuLinks = document.querySelectorAll(".mobile-nav a");
 const mobileNavGroups = document.querySelectorAll(".mobile-nav-group");
+const contactForm = document.querySelector("[data-contact-form]");
+const contactModal = document.querySelector("[data-contact-modal]");
+const contactModalClose = document.querySelectorAll("[data-contact-modal-close]");
 const yearTarget = document.querySelector("[data-year]");
 const cookieConsentKey = "wcc-cookie-consent";
 
@@ -71,6 +74,7 @@ window.addEventListener("pageshow", () => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     setMenuState(false);
+    setContactModalState(false);
   }
 });
 
@@ -132,6 +136,29 @@ const createCookieBanner = () => {
 };
 
 createCookieBanner();
+
+const setContactModalState = (isOpen) => {
+  if (!contactModal) {
+    return;
+  }
+
+  contactModal.hidden = !isOpen;
+  document.body.classList.toggle("modal-open", isOpen);
+};
+
+contactModalClose.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    setContactModalState(false);
+  });
+});
+
+if (contactForm && contactModal) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    setContactModalState(true);
+    contactForm.reset();
+  });
+}
 
 if (window.lucide) {
   window.lucide.createIcons();
