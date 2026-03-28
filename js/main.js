@@ -3,11 +3,22 @@ const menu = document.querySelector("[data-mobile-menu]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menuClose = document.querySelector("[data-menu-close]");
 const menuLinks = document.querySelectorAll(".mobile-nav a");
+const mobileNavGroups = document.querySelectorAll(".mobile-nav-group");
 const yearTarget = document.querySelector("[data-year]");
+
+const closeMobileGroups = () => {
+  mobileNavGroups.forEach((group) => {
+    group.removeAttribute("open");
+  });
+};
 
 const setMenuState = (isOpen) => {
   if (!menu || !menuToggle) {
     return;
+  }
+
+  if (!isOpen) {
+    closeMobileGroups();
   }
 
   menu.classList.toggle("is-open", isOpen);
@@ -33,6 +44,11 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     setMenuState(false);
   });
+});
+
+window.addEventListener("pageshow", () => {
+  setMenuState(false);
+  closeMobileGroups();
 });
 
 document.addEventListener("keydown", (event) => {
