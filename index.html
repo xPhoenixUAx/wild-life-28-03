@@ -1,287 +1,522 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wildlife Control Connect helps homeowners compare local humane animal removal and property protection services across the USA.">
-  <title>Wildlife Control Connect | Humane Animal Removal Referrals</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/bundle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <script defer src="https://unpkg.com/lucide@latest"></script>
-  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script defer src="js/main.js"></script>
-</head>
-<body data-page="home">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wildlife Control Connect helps homeowners compare local humane animal removal and property protection services across the USA."
+    />
+    <title>Wildlife Control Connect | Humane Animal Removal Referrals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header" data-site-header>
-    <div class="container header-bar">
-      <a class="brand" href="index.html" aria-label="Wildlife Control Connect home">
-        <span class="brand-mark">WCC</span>
-        <span class="brand-text">
-          <strong>Wildlife Control Connect</strong>
-          <span>Humane local service connections</span>
-        </span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <a class="button button-secondary desktop-cta" href="contact.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i><span>Request Local Help</span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
-          <span>Menu</span>
-          <i data-lucide="menu"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <aside class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
-    <div class="mobile-menu__inner">
-      <div class="mobile-menu__top">
-        <a class="brand" href="index.html">
+    <header class="site-header" data-site-header>
+      <div class="container header-bar">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Wildlife Control Connect home"
+        >
           <span class="brand-mark">WCC</span>
           <span class="brand-text">
             <strong>Wildlife Control Connect</strong>
-            <span>Local wildlife referral network</span>
+            <span>Humane local service connections</span>
           </span>
         </a>
-        <button class="menu-close" type="button" data-menu-close aria-label="Close menu">
-          <i data-lucide="x"></i>
-        </button>
+
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-secondary desktop-cta" href="contact.html"
+            ><i class="fa-solid fa-phone-volume" aria-hidden="true"></i
+            ><span>Request Local Help</span></a
+          >
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-toggle
+          >
+            <span>Menu</span>
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
       </div>
+    </header>
 
-      <nav class="mobile-nav" aria-label="Mobile">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="services.html">Services</a>
-        <a href="raccoon-removal.html">Raccoon Removal</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </nav>
+    <aside
+      class="mobile-menu"
+      id="mobile-menu"
+      data-mobile-menu
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__top">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">WCC</span>
+            <span class="brand-text">
+              <strong>Wildlife Control Connect</strong>
+              <span>Local wildlife referral network</span>
+            </span>
+          </a>
+          <button
+            class="menu-close"
+            type="button"
+            data-menu-close
+            aria-label="Close menu"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
 
-      <div class="mobile-menu__meta">
-        <p>Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
-        <a class="button" href="contact.html"><i class="fa-solid fa-shield-cat" aria-hidden="true"></i><span>Secure Your Home Today</span></a>
+        <nav class="mobile-nav" aria-label="Mobile">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="services.html">Services</a>
+          <a href="raccoon-removal.html">Raccoon Removal</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </nav>
+
+        <div class="mobile-menu__meta">
+          <p>
+            Professional animal removal. Effective exclusion methods. Reliable
+            wildlife solutions.
+          </p>
+          <a class="button" href="contact.html"
+            ><i class="fa-solid fa-shield-cat" aria-hidden="true"></i
+            ><span>Secure Your Home Today</span></a
+          >
+        </div>
       </div>
-    </div>
-  </aside>
+    </aside>
 
-  <main id="main-content">
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-copy" data-aos="fade-up" data-aos-delay="50">
-          <p class="eyebrow">Family-owned wildlife service connector</p>
-          <h1>Humane animal removal referrals for homes, attics, roofs, crawl spaces, and yards.</h1>
-          <p class="hero-lead">Wildlife Control Connect helps homeowners compare local service providers focused on humane animal removal, exclusion work, sanitation, and long-term property protection.</p>
-          <div class="hero-actions">
-            <a class="button" href="contact.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i><span>Request Local Help</span></a>
-            <a class="button button-secondary" href="services.html"><i class="fa-solid fa-paw" aria-hidden="true"></i><span>Browse Animal Services</span></a>
+    <main id="main-content">
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-aos="fade-up" data-aos-delay="50">
+            <p class="eyebrow">Family-owned wildlife service connector</p>
+            <h1>
+              Humane animal removal referrals for homes, attics, roofs, crawl
+              spaces, and yards.
+            </h1>
+            <p class="hero-lead">
+              Wildlife Control Connect helps homeowners compare local service
+              providers focused on humane animal removal, exclusion work,
+              sanitation, and long-term property protection.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="contact.html"
+                ><i class="fa-solid fa-phone-volume" aria-hidden="true"></i
+                ><span>Request Local Help</span></a
+              >
+              <a class="button button-secondary" href="services.html"
+                ><i class="fa-solid fa-paw" aria-hidden="true"></i
+                ><span>Browse Animal Services</span></a
+              >
+            </div>
+            <ul class="hero-points">
+              <li>
+                <i data-lucide="shield-check"></i
+                ><span>Humane removal and exclusion focused</span>
+              </li>
+              <li>
+                <i data-lucide="home"></i
+                ><span
+                  >Roofline, attic, crawl space, and foundation protection</span
+                >
+              </li>
+              <li>
+                <i data-lucide="map-pinned"></i
+                ><span
+                  >Local homeowner referral support across the USA market</span
+                >
+              </li>
+            </ul>
           </div>
-          <ul class="hero-points">
-            <li><i data-lucide="shield-check"></i><span>Humane removal and exclusion focused</span></li>
-            <li><i data-lucide="home"></i><span>Roofline, attic, crawl space, and foundation protection</span></li>
-            <li><i data-lucide="map-pinned"></i><span>Local homeowner referral support across the USA market</span></li>
-          </ul>
-        </div>
 
-        <div class="hero-visual hero-media-frame" data-aos="fade-left" data-aos-delay="150">
-          <img src="img/home/hero-img.jpg" alt="Professional technician inspecting a roof for bat entry points" class="hero-visual__image">
+          <div
+            class="hero-visual hero-media-frame"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <img
+              src="img/home/hero-img.jpg"
+              alt="Professional technician inspecting a roof for bat entry points"
+              class="hero-visual__image"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="metrics-section section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Property-focused wildlife support</p>
-          <h2>Common homeowner priorities in one clear workflow.</h2>
-        </div>
-
-        <div class="stats-grid">
-          <article class="stat-card" data-stage="IDENTIFY" data-aos="fade-up">
-            <h3>Animal identification</h3>
-            <p>Different species leave different signs. Scratching, droppings, torn soffits, chewed wires, and lawn tunnels all point to different service needs.</p>
-          </article>
-          <article class="stat-card" data-stage="SEAL" data-aos="fade-up" data-aos-delay="80">
-            <h3>Entry-point control</h3>
-            <p>Effective exclusion methods help reduce repeat wildlife activity around vents, fascia gaps, crawl-space openings, deck voids, and roof returns.</p>
-          </article>
-          <article class="stat-card" data-stage="CLEAN" data-aos="fade-up" data-aos-delay="160">
-            <h3>Cleanup planning</h3>
-            <p>Attic contamination, nesting debris, insulation damage, and odor sources often require separate sanitation and repair discussions.</p>
-          </article>
-          <article class="stat-card" data-stage="MATCH" data-aos="fade-up" data-aos-delay="240">
-            <h3>Local service matching</h3>
-            <p>Homeowners can use one request to connect with local providers familiar with regional species, seasonal patterns, and structural risk areas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Humane wildlife categories</p>
-          <h2 class="service-preview-heading">Support for attic invaders, yard burrowers, roofline nesters, and interior rodent activity.</h2>
-        </div>
-        <div class="service-preview-grid">
-          <article class="mini-card" data-aos="fade-up">
-            <img src="img/services/main-images/racoon.jpg" alt="Raccoon removal service" class="mini-card__image">
-            <div class="mini-card__content">
-              <h3>Raccoons</h3>
-              <p>Attic denning, soffit damage, insulation disruption, and cleanup planning.</p>
-            </div>
-          </article>
-          <article class="mini-card" data-aos="fade-up" data-aos-delay="80">
-            <img src="img/services/main-images/squirell.jpg" alt="Squirrel removal service" class="mini-card__image">
-            <div class="mini-card__content">
-              <h3>Squirrels</h3>
-              <p>Chewing at roof edges, vent caps, gable gaps, and electrical pathways.</p>
-            </div>
-          </article>
-          <article class="mini-card" data-aos="fade-up" data-aos-delay="160">
-            <img src="img/services/main-images/bat.jpg" alt="Bat removal service" class="mini-card__image">
-            <div class="mini-card__content">
-              <h3>Bats</h3>
-              <p>Colony entry points, guano concerns, and seasonal exclusion timing.</p>
-            </div>
-          </article>
-          <article class="mini-card" data-aos="fade-up" data-aos-delay="240">
-            <img src="img/services/main-images/skunks.jpg" alt="Skunk removal service" class="mini-card__image">
-            <div class="mini-card__content">
-              <h3>Skunks</h3>
-              <p>Deck denning, odor events, turf disruption, and low-clearance access zones.</p>
-            </div>
-          </article>
-        </div>
-        <a class="button service-preview-button" href="services.html"><i class="fa-solid fa-grid-2" aria-hidden="true"></i><span>View All Animal Services</span></a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="eyebrow">How it works</p>
-          <h2>A structured path from wildlife signs to property protection.</h2>
-          <p>Designed for homeowners comparing local options for humane removal, exclusion, and repair planning.</p>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card process-card--print" data-step="STEP 1" data-aos="fade-up">
-            <span>Step 1</span>
-            <h3>Share the issue</h3>
-            <p>Describe where activity is happening, which sounds or smells are present, and which animal may be involved.</p>
-          </article>
-          <article class="process-card process-card--print" data-step="STEP 2" data-aos="fade-up" data-aos-delay="80">
-            <span>Step 2</span>
-            <h3>Review local options</h3>
-            <p>Connect with local providers offering professional animal removal, exclusion work, and property-focused recommendations.</p>
-          </article>
-          <article class="process-card process-card--print" data-step="STEP 3" data-aos="fade-up" data-aos-delay="160">
-            <span>Step 3</span>
-            <h3>Plan next actions</h3>
-            <p>Compare inspection findings, sanitation needs, vulnerable entry points, and seasonal wildlife patterns before choosing a service path.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="container split-layout split-layout--reverse">
-        <div class="about-section-media" data-aos="fade-right">
-          <img src="img/home/about-sect.jpg" alt="Family-owned office desk with wildlife inspection notes and service routing paperwork" class="about-section-media__image">
-        </div>
-        <div data-aos="fade-left">
+      <section class="metrics-section section">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">About the service model</p>
-            <h2>Built as a homeowner-friendly local connector, not a national call-center shell.</h2>
+            <p class="eyebrow">Property-focused wildlife support</p>
+            <h2>Common homeowner priorities in one clear workflow.</h2>
           </div>
-          <p>Wildlife Control Connect is positioned as a local family-owned aggregator focused on helping homeowners navigate humane wildlife issues with more clarity. The site centers on property protection, practical information, and referral support instead of inflated claims.</p>
-          <div class="check-list">
-            <div><i data-lucide="check"></i><span>Humane animal removal and exclusion messaging</span></div>
-            <div><i data-lucide="check"></i><span>Ads-safe language for service marketing in the USA</span></div>
-            <div><i data-lucide="check"></i><span>Sharp, high-contrast layout inspired by Swiss editorial systems</span></div>
-          </div>
-          <a class="button button-secondary" href="about.html"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><span>Learn More</span></a>
-        </div>
-      </div>
-    </section>
 
-    <section class="section section-alt">
-      <div class="container split-layout">
+          <div class="stats-grid">
+            <article class="stat-card" data-stage="IDENTIFY" data-aos="fade-up">
+              <h3>Animal identification</h3>
+              <p>
+                Different species leave different signs. Scratching, droppings,
+                torn soffits, chewed wires, and lawn tunnels all point to
+                different service needs.
+              </p>
+            </article>
+            <article
+              class="stat-card"
+              data-stage="SEAL"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <h3>Entry-point control</h3>
+              <p>
+                Effective exclusion methods help reduce repeat wildlife activity
+                around vents, fascia gaps, crawl-space openings, deck voids, and
+                roof returns.
+              </p>
+            </article>
+            <article
+              class="stat-card"
+              data-stage="CLEAN"
+              data-aos="fade-up"
+              data-aos-delay="160"
+            >
+              <h3>Cleanup planning</h3>
+              <p>
+                Attic contamination, nesting debris, insulation damage, and odor
+                sources often require separate sanitation and repair
+                discussions.
+              </p>
+            </article>
+            <article
+              class="stat-card"
+              data-stage="MATCH"
+              data-aos="fade-up"
+              data-aos-delay="240"
+            >
+              <h3>Local service matching</h3>
+              <p>
+                Homeowners can use one request to connect with local providers
+                familiar with regional species, seasonal patterns, and
+                structural risk areas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Humane wildlife categories</p>
+            <h2 class="service-preview-heading">
+              Support for attic invaders, yard burrowers, roofline nesters, and
+              interior rodent activity.
+            </h2>
+          </div>
+          <div class="service-preview-grid">
+            <article class="mini-card" data-aos="fade-up">
+              <img
+                src="img/services/main-images/racoon.jpg"
+                alt="Raccoon removal service"
+                class="mini-card__image"
+              />
+              <div class="mini-card__content">
+                <h3>Raccoons</h3>
+                <p>
+                  Attic denning, soffit damage, insulation disruption, and
+                  cleanup planning.
+                </p>
+              </div>
+            </article>
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="80">
+              <img
+                src="img/services/main-images/squirell.jpg"
+                alt="Squirrel removal service"
+                class="mini-card__image"
+              />
+              <div class="mini-card__content">
+                <h3>Squirrels</h3>
+                <p>
+                  Chewing at roof edges, vent caps, gable gaps, and electrical
+                  pathways.
+                </p>
+              </div>
+            </article>
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="160">
+              <img
+                src="img/services/main-images/bat.jpg"
+                alt="Bat removal service"
+                class="mini-card__image"
+              />
+              <div class="mini-card__content">
+                <h3>Bats</h3>
+                <p>
+                  Colony entry points, guano concerns, and seasonal exclusion
+                  timing.
+                </p>
+              </div>
+            </article>
+            <article class="mini-card" data-aos="fade-up" data-aos-delay="240">
+              <img
+                src="img/services/main-images/skunks.jpg"
+                alt="Skunk removal service"
+                class="mini-card__image"
+              />
+              <div class="mini-card__content">
+                <h3>Skunks</h3>
+                <p>
+                  Deck denning, odor events, turf disruption, and low-clearance
+                  access zones.
+                </p>
+              </div>
+            </article>
+          </div>
+          <a class="button service-preview-button" href="services.html"
+            ><i class="fa-solid fa-grid-2" aria-hidden="true"></i
+            ><span>View All Animal Services</span></a
+          >
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <p class="eyebrow">How it works</p>
+            <h2>
+              A structured path from wildlife signs to property protection.
+            </h2>
+            <p>
+              Designed for homeowners comparing local options for humane
+              removal, exclusion, and repair planning.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article
+              class="process-card process-card--print"
+              data-step="STEP 1"
+              data-aos="fade-up"
+            >
+              <span>Step 1</span>
+              <h3>Share the issue</h3>
+              <p>
+                Describe where activity is happening, which sounds or smells are
+                present, and which animal may be involved.
+              </p>
+            </article>
+            <article
+              class="process-card process-card--print"
+              data-step="STEP 2"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <span>Step 2</span>
+              <h3>Review local options</h3>
+              <p>
+                Connect with local providers offering professional animal
+                removal, exclusion work, and property-focused recommendations.
+              </p>
+            </article>
+            <article
+              class="process-card process-card--print"
+              data-step="STEP 3"
+              data-aos="fade-up"
+              data-aos-delay="160"
+            >
+              <span>Step 3</span>
+              <h3>Plan next actions</h3>
+              <p>
+                Compare inspection findings, sanitation needs, vulnerable entry
+                points, and seasonal wildlife patterns before choosing a service
+                path.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="container split-layout split-layout--reverse">
+          <div class="about-section-media" data-aos="fade-right">
+            <img
+              src="img/home/about-sect.jpg"
+              alt="Family-owned office desk with wildlife inspection notes and service routing paperwork"
+              class="about-section-media__image"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <div class="section-heading">
+              <p class="eyebrow">About the service model</p>
+              <h2>
+                Built as a homeowner-friendly local connector, not a national
+                call-center shell.
+              </h2>
+            </div>
+            <p>
+              Wildlife Control Connect is positioned as a local family-owned
+              aggregator focused on helping homeowners navigate humane wildlife
+              issues with more clarity. The site centers on property protection,
+              practical information, and referral support instead of inflated
+              claims.
+            </p>
+            <div class="check-list">
+              <div>
+                <i data-lucide="check"></i
+                ><span>Humane animal removal and exclusion messaging</span>
+              </div>
+              <div>
+                <i data-lucide="check"></i
+                ><span>Ads-safe language for service marketing in the USA</span>
+              </div>
+              <div>
+                <i data-lucide="check"></i
+                ><span
+                  >Sharp, high-contrast layout inspired by Swiss editorial
+                  systems</span
+                >
+              </div>
+            </div>
+            <a class="button button-secondary custom-btn" href="about.html"
+              ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ><span>Learn More</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split-layout">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">FAQ</p>
+              <h2>
+                Answers homeowners often look for before requesting service
+                referrals.
+              </h2>
+            </div>
+
+            <div class="faq-list">
+              <article class="faq-item" data-aos="fade-up">
+                <h3>Do wildlife issues always start in the attic?</h3>
+                <p>
+                  No. Yard burrows, crawl-space voids, chimney tops, wall
+                  cavities, roof vents, and foundation gaps are all common
+                  access points.
+                </p>
+              </article>
+              <article class="faq-item" data-aos="fade-up" data-aos-delay="80">
+                <h3>Are cleanup and exclusion separate from removal?</h3>
+                <p>
+                  Often, yes. Homeowners commonly compare animal removal,
+                  sealing work, sanitation, and repair recommendations as
+                  separate parts of the project.
+                </p>
+              </article>
+              <article class="faq-item" data-aos="fade-up" data-aos-delay="160">
+                <h3>Is humane exclusion available for birds and bats?</h3>
+                <p>
+                  Effective exclusion methods are a central part of many bird
+                  and bat service discussions, especially around seasonal
+                  activity and protected roosting periods.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="cta-panel cta-panel--dark cta-panel--home-promo"
+            data-aos="fade-left"
+          >
+            <p class="eyebrow">Start here</p>
+            <h2>Secure your home today.</h2>
+            <p>
+              Share the animal type, affected area, and clearest signs to
+              compare local service options for humane removal, exclusion work,
+              and property protection.
+            </p>
+            <div class="cta-panel__footer">
+              <p>
+                Share the animal type, affected area, and the clearest visible
+                signs to move faster.
+              </p>
+              <a class="button" href="contact.html"
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+                ><span>Contact Page</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
         <div>
-          <div class="section-heading">
-            <p class="eyebrow">FAQ</p>
-            <h2>Answers homeowners often look for before requesting service referrals.</h2>
-          </div>
-
-          <div class="faq-list">
-            <article class="faq-item" data-aos="fade-up">
-              <h3>Do wildlife issues always start in the attic?</h3>
-              <p>No. Yard burrows, crawl-space voids, chimney tops, wall cavities, roof vents, and foundation gaps are all common access points.</p>
-            </article>
-            <article class="faq-item" data-aos="fade-up" data-aos-delay="80">
-              <h3>Are cleanup and exclusion separate from removal?</h3>
-              <p>Often, yes. Homeowners commonly compare animal removal, sealing work, sanitation, and repair recommendations as separate parts of the project.</p>
-            </article>
-            <article class="faq-item" data-aos="fade-up" data-aos-delay="160">
-              <h3>Is humane exclusion available for birds and bats?</h3>
-              <p>Effective exclusion methods are a central part of many bird and bat service discussions, especially around seasonal activity and protected roosting periods.</p>
-            </article>
-          </div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">WCC</span>
+            <span class="brand-text">
+              <strong>Wildlife Control Connect</strong>
+              <span>Humane local referral support</span>
+            </span>
+          </a>
+          <p class="footer-copy">
+            Professional animal removal. Effective exclusion methods. Reliable
+            wildlife solutions.
+          </p>
         </div>
 
-        <div class="cta-panel cta-panel--dark cta-panel--home-promo" data-aos="fade-left">
-          <p class="eyebrow">Start here</p>
-          <h2>Secure your home today.</h2>
-          <p>Share the animal type, affected area, and clearest signs to compare local service options for humane removal, exclusion work, and property protection.</p>
-          <div class="cta-panel__footer">
-            <p>Share the animal type, affected area, and the clearest visible signs to move faster.</p>
-            <a class="button" href="contact.html"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><span>Contact Page</span></a>
-          </div>
+        <div class="footer-links">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand brand-footer" href="index.html">
-          <span class="brand-mark">WCC</span>
-          <span class="brand-text">
-            <strong>Wildlife Control Connect</strong>
-            <span>Humane local referral support</span>
-          </span>
-        </a>
-        <p class="footer-copy">Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
+      <div class="container footer-bottom">
+        <p class="footer-disclaimer">
+          Disclaimer: This site is a free service to assist homeowners in
+          connecting with local service providers. All contractors/providers are
+          independent and this site does not warrant or guarantee any work
+          performed. It is the responsibility of the homeowner to verify that
+          the hired contractor furnishes the necessary license and insurance
+          required for the work being performed. All persons depicted in a photo
+          or video are actors or models and not contractors listed on this site.
+        </p>
+        <p class="footer-meta">
+          &copy; <span data-year></span> Wildlife Control Connect
+        </p>
       </div>
-
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p class="footer-disclaimer">Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
-      <p class="footer-meta">&copy; <span data-year></span> Wildlife Control Connect</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
