@@ -6,8 +6,38 @@ body[data-page="service-detail"] .detail-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+body[data-page="service-detail"] .service-detail-media {
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+body[data-page="service-detail"] .service-detail-media__image {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+body[data-page="service-detail"] .service-detail-sidecard {
+  height: 100%;
+}
+
+body[data-page="service-detail"] .service-detail-sidecard p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+body[data-page="service-detail"] .service-detail-cta {
+  max-width: 64rem;
+}
+
 @media (max-width: 900px) {
   body[data-page="service-detail"] .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  body[data-page="service-detail"] .service-detail-media {
+    min-height: 260px;
   }
 }

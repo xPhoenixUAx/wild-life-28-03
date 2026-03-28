@@ -10,15 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body data-page="about">
   <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header" data-site-header>
     <div class="container header-bar">
       <a class="brand" href="index.html">
-        <span class="brand-mark">WC</span>
+        <span class="brand-mark">WCC</span>
         <span class="brand-text">
           <strong>Wildlife Control Connect</strong>
           <span>Humane local service connections</span>
@@ -31,7 +35,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="button button-secondary desktop-cta" href="contact.html">Request Local Help</a>
+        <a class="button button-secondary desktop-cta" href="contact.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i><span>Request Local Help</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
           <span>Menu</span>
           <i data-lucide="menu"></i>
@@ -39,11 +43,12 @@
       </div>
     </div>
   </header>
+
   <aside class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
     <div class="mobile-menu__inner">
       <div class="mobile-menu__top">
         <a class="brand" href="index.html">
-          <span class="brand-mark">WC</span>
+          <span class="brand-mark">WCC</span>
           <span class="brand-text">
             <strong>Wildlife Control Connect</strong>
             <span>Local wildlife referral network</span>
@@ -56,7 +61,7 @@
       <nav class="mobile-nav" aria-label="Mobile">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="service-detail.html">Raccoon Removal</a>
+        <a href="raccoon-removal.html">Raccoon Removal</a>
         <a href="about.html" aria-current="page">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -64,39 +69,123 @@
       </nav>
       <div class="mobile-menu__meta">
         <p>Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
-        <a class="button" href="contact.html">Secure Your Home Today</a>
+        <a class="button" href="contact.html"><i class="fa-solid fa-shield-cat" aria-hidden="true"></i><span>Secure Your Home Today</span></a>
       </div>
     </div>
   </aside>
 
   <main id="main-content">
-    <section class="page-hero page-hero--compact">
-      <div class="container page-hero__grid">
-        <div>
-          <p class="eyebrow">About the company</p>
-          <h1>A local family-owned connector built around humane wildlife solutions and homeowner clarity.</h1>
-          <p>The site is designed to help homeowners understand wildlife issues, compare service categories, and connect with local providers focused on safe animal removal and property protection.</p>
+    <section class="page-hero about-hero">
+      <div class="container about-hero__grid">
+        <div class="about-hero__copy" data-aos="fade-up">
+          <p class="eyebrow">About the connector</p>
+          <h1>A local family-owned connector built around homeowner clarity.</h1>
+          <p>The site is designed to help homeowners understand wildlife issues, compare service categories, and connect with local providers focused on humane animal removal and property protection.</p>
+          <div class="about-hero__actions">
+            <a class="button" href="contact.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i><span>Request Local Help</span></a>
+            <a class="button button-secondary" href="services.html"><i class="fa-solid fa-paw" aria-hidden="true"></i><span>Browse Services</span></a>
+          </div>
         </div>
-        <div class="image-placeholder" role="img" aria-label="Family-owned office team reviewing wildlife route notes and home inspection diagrams - bright documentary style">
-          [IMAGE: Family-owned office team reviewing wildlife route notes and home inspection diagrams - bright documentary style]
+
+        <aside class="about-manifesto" data-aos="fade-left" data-aos-delay="120">
+          <p class="eyebrow">What guides the site</p>
+          <h2>Practical, homeowner-friendly, and grounded in real property concerns.</h2>
+          <div class="about-manifesto__list">
+            <div>
+              <span>A1</span>
+              <p>Clear service language instead of inflated claims or generic lead-gen filler.</p>
+            </div>
+            <div>
+              <span>A2</span>
+              <p>Humane removal, exclusion work, and property protection kept at the center of the message.</p>
+            </div>
+            <div>
+              <span>A3</span>
+              <p>A local connector model that helps homeowners move from confusion to a clearer next step.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section about-principles">
+      <div class="container">
+        <div class="section-heading about-principles__heading">
+          <p class="eyebrow">Why this site exists</p>
+          <h2>Structured to reduce stress when a wildlife issue shows up fast.</h2>
+        </div>
+
+        <div class="about-principles__rail">
+          <article class="about-principle-row" data-aos="fade-up">
+            <span class="about-principle-row__index">A</span>
+            <div class="about-principle-row__body">
+              <h3>Less noise, more direction</h3>
+              <p>Homeowners dealing with scratching, droppings, roof damage, or yard disturbance usually need structure first. The site is organized to make that first step feel clearer.</p>
+            </div>
+          </article>
+
+          <article class="about-principle-row about-principle-row--offset" data-aos="fade-up" data-aos-delay="80">
+            <span class="about-principle-row__index">B</span>
+            <div class="about-principle-row__body">
+              <h3>Built around real property zones</h3>
+              <p>Attics, roofs, crawl spaces, porches, lawns, garages, and wall voids shape the way the site talks about service categories and next actions.</p>
+            </div>
+          </article>
+
+          <article class="about-principle-row" data-aos="fade-up" data-aos-delay="160">
+            <span class="about-principle-row__index">C</span>
+            <div class="about-principle-row__body">
+              <h3>Referral logic without fake certainty</h3>
+              <p>The goal is to help homeowners compare local options and move forward with better context, not to pretend every wildlife issue follows the same script.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container about-system__grid">
+        <div class="about-system__copy" data-aos="fade-up">
+          <p class="eyebrow">How the site communicates</p>
+          <h2>Calmer, clearer, and more useful for homeowners under pressure.</h2>
+          <p>The language is intentionally direct. It focuses on the signs people actually notice, the parts of the home they worry about, and the kinds of service discussions that usually follow.</p>
+          <p>Instead of sounding technical for the sake of sounding technical, the site is meant to feel more trustworthy, more grounded, and easier to scan when someone is trying to figure out what is happening around the property.</p>
+        </div>
+
+        <div class="about-system__matrix">
+          <article data-aos="fade-up" data-aos-delay="60">
+            <h3>Homeowner-first framing</h3>
+            <p>Messaging starts from visible signs, stress points, and affected areas rather than abstract service jargon.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="120">
+            <h3>Species-specific clarity</h3>
+            <p>Different animals create different patterns of damage, noise, and risk, so the content stays category-aware.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="180">
+            <h3>Ads-safe tone</h3>
+            <p>The copy avoids guarantees and inflated claims while still sounding confident and service-ready.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="240">
+            <h3>Editorial visual rhythm</h3>
+            <p>Yellow accents, tighter type, and structured sections keep the page from feeling like a generic service template.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container about-grid">
-        <article class="line-card">
-          <h2>Why this site exists</h2>
-          <p>Wildlife issues are stressful, especially when noises, odors, contamination, or roof damage show up fast. This site organizes common service categories and helps route homeowners toward local support.</p>
-        </article>
-        <article class="line-card">
-          <h2>What the site emphasizes</h2>
-          <p>Humane animal removal, effective exclusion methods, sanitation planning, and realistic property-protection conversations for homes and outbuildings.</p>
-        </article>
-        <article class="line-card">
-          <h2>What the site does not claim</h2>
-          <p>The site avoids inflated promises and instead presents clear service language, referral support, and straightforward legal disclosures.</p>
-        </article>
+      <div class="container">
+        <div class="about-cta-band" data-aos="fade-up">
+          <div class="about-cta-band__copy">
+            <p class="eyebrow">Ready to move forward?</p>
+            <h2>Share the animal type, affected area, and clearest signs to start comparing local options.</h2>
+            <p>Whether the issue involves raccoons in the attic, skunks under a deck, bats near the roofline, or rodents inside wall voids, the first step is giving enough detail to point the request in the right direction.</p>
+          </div>
+          <div class="about-cta-band__actions">
+            <p>Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
+            <a class="button" href="contact.html"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><span>Go to Contact</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -105,12 +194,13 @@
     <div class="container footer-grid">
       <div>
         <a class="brand brand-footer" href="index.html">
-          <span class="brand-mark">WC</span>
+          <span class="brand-mark">WCC</span>
           <span class="brand-text">
             <strong>Wildlife Control Connect</strong>
             <span>Humane local referral support</span>
           </span>
         </a>
+        <p class="footer-copy">Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
       </div>
       <div class="footer-links">
         <a href="services.html">Services</a>

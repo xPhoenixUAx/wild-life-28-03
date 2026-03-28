@@ -4,8 +4,180 @@ body[data-page="services"] .service-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+body[data-page="services"] .service-groups {
+  display: grid;
+  gap: 2.5rem;
+}
+
+body[data-page="services"] .service-group {
+  display: grid;
+  gap: 1.1rem;
+}
+
+body[data-page="services"] .service-group__header {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 62rem;
+}
+
+body[data-page="services"] .service-group__header h2 {
+  font-size: clamp(1.55rem, 2.8vw, 2.3rem);
+  margin-bottom: 0;
+}
+
+body[data-page="services"] .service-group__header p:last-child {
+  margin-bottom: 0;
+  max-width: 52ch;
+}
+
+body[data-page="services"] .services-hero-copy h1 {
+  max-width: 12ch;
+  font-size: clamp(1.2rem, 4vw, 3.2rem);
+}
+body[data-page="services"] .services-hero-media {
+  overflow: hidden;
+  min-height: 360px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+body[data-page="services"] .services-hero-media__image {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
 body[data-page="services"] .service-card h2 {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.35rem;
+}
+
+body[data-page="services"] .service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 1 / 0.95;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background: #101418;
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.18);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+body[data-page="services"] .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 6px solid #f4c542;
+  border-right: 6px solid #f4c542;
+  z-index: 3;
+  pointer-events: none;
+}
+
+body[data-page="services"] .service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0.18) 38%,
+      rgba(0, 0, 0, 0.76) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(244, 197, 66, 0.08) 0%,
+      rgba(244, 197, 66, 0) 28%
+    );
+  z-index: 1;
+}
+
+body[data-page="services"] .service-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 320ms ease,
+    filter 320ms ease;
+}
+
+body[data-page="services"] .service-card__content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding: 1rem 1rem 1.05rem 1.2rem;
+  border-left: 4px solid #f4c542;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(0, 0, 0, 0.16) 100%
+  );
+  transition:
+    background 220ms ease,
+    transform 220ms ease,
+    border-color 220ms ease;
+}
+
+body[data-page="services"] .service-card h2,
+body[data-page="services"] .service-card p,
+body[data-page="services"] .service-card .text-link {
+  color: #ffffff;
+}
+
+body[data-page="services"] .service-card h2 {
+  font-size: 1.12rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+body[data-page="services"] .service-card p {
+  margin-bottom: 0.15rem;
+  max-width: 24ch;
+  font-size: 0.92rem;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body[data-page="services"] .service-card .text-link {
+  width: fit-content;
+  color: #ffffff;
+}
+
+body[data-page="services"] .service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.24);
+}
+
+body[data-page="services"] .service-card:hover .service-card__image {
+  transform: scale(1.06);
+  filter: saturate(1.08) contrast(1.04);
+}
+
+body[data-page="services"] .service-card:hover .service-card__content {
+  transform: translateY(-4px);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.22) 100%
+  );
+  border-color: #ffd24d;
+}
+
+body[data-page="services"] .service-card:hover::before {
+  border-top-color: #ffd24d;
+  border-right-color: #ffd24d;
 }
 
 @media (max-width: 980px) {
@@ -15,7 +187,16 @@ body[data-page="services"] .service-card h2 {
 }
 
 @media (max-width: 720px) {
+  body[data-page="services"] .services-hero-media {
+    min-height: 240px;
+  }
+
   body[data-page="services"] .service-grid {
     grid-template-columns: 1fr;
+  }
+
+  body[data-page="services"] .service-card {
+    aspect-ratio: auto;
+    min-height: 280px;
   }
 }

@@ -10,7 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body data-page="services">
@@ -18,7 +21,7 @@
   <header class="site-header" data-site-header>
     <div class="container header-bar">
       <a class="brand" href="index.html">
-        <span class="brand-mark">WC</span>
+        <span class="brand-mark">WCC</span>
         <span class="brand-text">
           <strong>Wildlife Control Connect</strong>
           <span>Humane local service connections</span>
@@ -31,7 +34,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="button button-secondary desktop-cta" href="contact.html">Request Local Help</a>
+        <a class="button button-secondary desktop-cta" href="contact.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i><span>Request Local Help</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
           <span>Menu</span>
           <i data-lucide="menu"></i>
@@ -44,7 +47,7 @@
     <div class="mobile-menu__inner">
       <div class="mobile-menu__top">
         <a class="brand" href="index.html">
-          <span class="brand-mark">WC</span>
+          <span class="brand-mark">WCC</span>
           <span class="brand-text">
             <strong>Wildlife Control Connect</strong>
             <span>Local wildlife referral network</span>
@@ -57,7 +60,7 @@
       <nav class="mobile-nav" aria-label="Mobile">
         <a href="index.html">Home</a>
         <a href="services.html" aria-current="page">Services</a>
-        <a href="service-detail.html">Raccoon Removal</a>
+        <a href="raccoon-removal.html">Raccoon Removal</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -65,7 +68,7 @@
       </nav>
       <div class="mobile-menu__meta">
         <p>Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
-        <a class="button" href="contact.html">Secure Your Home Today</a>
+        <a class="button" href="contact.html"><i class="fa-solid fa-shield-cat" aria-hidden="true"></i><span>Secure Your Home Today</span></a>
       </div>
     </div>
   </aside>
@@ -73,32 +76,151 @@
   <main id="main-content">
     <section class="page-hero page-hero--compact">
       <div class="container page-hero__grid">
-        <div>
+        <div class="services-hero-copy" data-aos="fade-up">
           <p class="eyebrow">Animal service categories</p>
           <h1>All-in-one wildlife service grid for common residential animal issues.</h1>
           <p>Browse the most requested animal categories and compare common property concerns, risk areas, and exclusion priorities.</p>
         </div>
-        <div class="image-placeholder" role="img" aria-label="Wildlife inspection checklist on a clipboard beside a flashlight and protective gloves - crisp studio lighting">
-          [IMAGE: Wildlife inspection checklist on a clipboard beside a flashlight and protective gloves - crisp studio lighting]
+        <div class="services-hero-media" data-aos="fade-left" data-aos-delay="120">
+          <img src="img/services/hero-image-serv.jpg" alt="Wildlife inspection overview for residential animal service categories" class="services-hero-media__image">
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="service-grid service-grid--full">
-          <article class="service-card"><h2>Raccoon Removal</h2><p>Attic denning, soffit damage, droppings, odor control, and entry-point sealing.</p><a class="text-link" href="service-detail.html">View service template</a></article>
-          <article class="service-card"><h2>Skunk Removal</h2><p>Deck voids, crawl spaces, lawn disruption, odor events, and exclusion planning.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Squirrel Removal</h2><p>Chewed fascia, attic scratching, vent screening, and cable or wire risk.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Bat Removal</h2><p>Colony access points, guano accumulation, and timing-sensitive exclusion work.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Opossum Removal</h2><p>Under-porch access, crawl-space nesting, entry control, and sanitation needs.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Groundhog Removal</h2><p>Burrow management near sheds, foundations, retaining walls, and patios.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Mole Control</h2><p>Turf tunneling, subsurface activity, lawn pattern assessment, and barrier planning.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Mice Removal</h2><p>Interior noise, droppings, wall void movement, and food-source reduction.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Rat Removal</h2><p>Roof rats, crawl-space activity, attic contamination, and exclusion upgrades.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Bird Control</h2><p>Vent nesting, roofline perching, droppings, and humane deterrent strategies.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Snake Removal</h2><p>Garage entries, crawl-space encounters, landscape shelter reduction, and sealing.</p><a class="text-link" href="contact.html">Request local help</a></article>
-          <article class="service-card"><h2>Fox Removal</h2><p>Yard denning, outbuilding access, perimeter checks, and habitat risk review.</p><a class="text-link" href="contact.html">Request local help</a></article>
+        <div class="service-groups">
+          <section class="service-group" data-aos="fade-up">
+            <div class="service-group__header">
+              <h2>Attic, roofline, and upper-structure wildlife</h2>
+              <p>Services typically tied to soffits, vents, roof edges, attic voids, and elevated entry points.</p>
+            </div>
+            <div class="service-grid service-grid--full">
+              <article class="service-card">
+                <img src="img/services/main-images/racoon.jpg" alt="Raccoon removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Raccoon Removal</h2>
+                  <p>Attic denning, soffit damage, droppings, odor control, and entry-point sealing.</p>
+                  <a class="text-link" href="raccoon-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/squirell.jpg" alt="Squirrel removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Squirrel Removal</h2>
+                  <p>Chewed fascia, attic scratching, vent screening, and cable or wire risk.</p>
+                  <a class="text-link" href="squirrel-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/bat.jpg" alt="Bat removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Bat Removal</h2>
+                  <p>Colony access points, guano accumulation, and timing-sensitive exclusion work.</p>
+                  <a class="text-link" href="bat-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/bird.jpg" alt="Bird control service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Bird Control</h2>
+                  <p>Vent nesting, roofline perching, droppings, and humane deterrent strategies.</p>
+                  <a class="text-link" href="bird-control.html">View service details</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="service-group" data-aos="fade-up" data-aos-delay="60">
+            <div class="service-group__header">
+              <h2>Crawl space, deck, and perimeter denning</h2>
+              <p>Species commonly found under porches, low-clearance voids, garage edges, and perimeter shelter zones.</p>
+            </div>
+            <div class="service-grid service-grid--full">
+              <article class="service-card">
+                <img src="img/services/main-images/skunks.jpg" alt="Skunk removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Skunk Removal</h2>
+                  <p>Deck voids, crawl spaces, lawn disruption, odor events, and exclusion planning.</p>
+                  <a class="text-link" href="skunk-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/oppossum.jpg" alt="Opossum removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Opossum Removal</h2>
+                  <p>Under-porch access, crawl-space nesting, entry control, and sanitation needs.</p>
+                  <a class="text-link" href="opossum-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/snake.jpg" alt="Snake removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Snake Removal</h2>
+                  <p>Garage entries, crawl-space encounters, landscape shelter reduction, and sealing.</p>
+                  <a class="text-link" href="snake-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/fox.jpg" alt="Fox removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Fox Removal</h2>
+                  <p>Yard denning, outbuilding access, perimeter checks, and habitat risk review.</p>
+                  <a class="text-link" href="fox-removal.html">View service details</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="service-group" data-aos="fade-up" data-aos-delay="120">
+            <div class="service-group__header">
+              <h2>Lawn, tunnel, and burrow activity</h2>
+              <p>Ground-level wildlife signs often show up as digging, mounds, burrow openings, and disrupted landscaping.</p>
+            </div>
+            <div class="service-grid service-grid--full">
+              <article class="service-card">
+                <img src="img/services/main-images/groundhog.jpg" alt="Groundhog removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Groundhog Removal</h2>
+                  <p>Burrow management near sheds, foundations, retaining walls, and patios.</p>
+                  <a class="text-link" href="groundhog-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/mole.jpg" alt="Mole control service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Mole Control</h2>
+                  <p>Turf tunneling, subsurface activity, lawn pattern assessment, and barrier planning.</p>
+                  <a class="text-link" href="mole-control.html">View service details</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="service-group" data-aos="fade-up" data-aos-delay="180">
+            <div class="service-group__header">
+              <h2>Interior rodent issues and wall-void movement</h2>
+              <p>Services focused on droppings, scratching, food-source access, and entry points tied to interior rodent activity.</p>
+            </div>
+            <div class="service-grid service-grid--full">
+              <article class="service-card">
+                <img src="img/services/main-images/mice.jpg" alt="Mice removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Mice Removal</h2>
+                  <p>Interior noise, droppings, wall void movement, and food-source reduction.</p>
+                  <a class="text-link" href="mice-removal.html">View service details</a>
+                </div>
+              </article>
+              <article class="service-card">
+                <img src="img/services/main-images/rat.jpg" alt="Rat removal service" class="service-card__image">
+                <div class="service-card__content">
+                  <h2>Rat Removal</h2>
+                  <p>Roof rats, crawl-space activity, attic contamination, and exclusion upgrades.</p>
+                  <a class="text-link" href="rat-removal.html">View service details</a>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
       </div>
     </section>
@@ -108,12 +230,13 @@
     <div class="container footer-grid">
       <div>
         <a class="brand brand-footer" href="index.html">
-          <span class="brand-mark">WC</span>
+          <span class="brand-mark">WCC</span>
           <span class="brand-text">
             <strong>Wildlife Control Connect</strong>
             <span>Humane local referral support</span>
           </span>
         </a>
+        <p class="footer-copy">Professional animal removal. Effective exclusion methods. Reliable wildlife solutions.</p>
       </div>
       <div class="footer-links">
         <a href="services.html">Services</a>

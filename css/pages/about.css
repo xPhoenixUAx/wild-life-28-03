@@ -1,13 +1,254 @@
-body[data-page="about"] .about-grid article {
-  min-height: 100%;
+body[data-page="about"] .about-hero {
+  padding-bottom: 3.5rem;
 }
 
-body[data-page="about"] .about-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+body[data-page="about"] .about-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+body[data-page="about"] .about-hero__copy h1 {
+  max-width: 12ch;
+  font-size: clamp(1.75rem, 3vw, 3.45rem);
+}
+
+body[data-page="about"] .about-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+body[data-page="about"] .about-manifesto {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  background:
+    linear-gradient(180deg, rgba(244, 197, 66, 0.08) 0%, rgba(244, 197, 66, 0) 42%),
+    var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body[data-page="about"] .about-manifesto h2 {
+  font-size: clamp(1.55rem, 2.7vw, 2.4rem);
+  max-width: 10ch;
+}
+
+body[data-page="about"] .about-manifesto__list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+body[data-page="about"] .about-manifesto__list div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+body[data-page="about"] .about-manifesto__list span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+body[data-page="about"] .about-manifesto__list p {
+  margin: 0;
+}
+
+body[data-page="about"] .about-principles {
+  border-top: 1px solid var(--color-border);
+}
+
+body[data-page="about"] .about-principles__heading h2 {
+  max-width: 14ch;
+}
+
+body[data-page="about"] .about-principles__rail {
+  display: grid;
+  gap: 1rem;
+}
+
+body[data-page="about"] .about-principle-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+body[data-page="about"] .about-principle-row--offset {
+  margin-left: 3.5rem;
+}
+
+body[data-page="about"] .about-principle-row__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+body[data-page="about"] .about-principle-row__body {
+  position: relative;
+  padding: 0.15rem 0 0.15rem 1.25rem;
+}
+
+body[data-page="about"] .about-principle-row__body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #f4c542 0%, rgba(244, 197, 66, 0.18) 100%);
+}
+
+body[data-page="about"] .about-principle-row__body h3 {
+  margin-bottom: 0.45rem;
+}
+
+body[data-page="about"] .about-principle-row__body p {
+  max-width: 58ch;
+  margin-bottom: 0;
+}
+
+body[data-page="about"] .about-system__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+body[data-page="about"] .about-system__copy h2 {
+  max-width: 12ch;
+}
+
+body[data-page="about"] .about-system__copy .eyebrow {
+  color: #f4c542;
+}
+
+body[data-page="about"] .about-system__copy p {
+  max-width: 60ch;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+body[data-page="about"] .about-system__matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+body[data-page="about"] .about-system__matrix article {
+  padding: 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 4px solid #f4c542;
+  background:
+    linear-gradient(180deg, rgba(244, 197, 66, 0.08) 0%, rgba(244, 197, 66, 0) 42%),
+    rgba(255, 255, 255, 0.04);
+}
+
+body[data-page="about"] .about-system__matrix h3,
+body[data-page="about"] .about-system__matrix p {
+  color: #ffffff;
+}
+
+body[data-page="about"] .about-system__matrix h3 {
+  position: relative;
+  padding-left: 1rem;
+}
+
+body[data-page="about"] .about-system__matrix h3::before {
+  content: "";
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  width: 6px;
+  height: 1.1rem;
+  background: #f4c542;
+}
+
+body[data-page="about"] .about-system__matrix p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+body[data-page="about"] .about-cta-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.6rem;
+  border: 1px solid var(--color-border);
+  border-top: 6px solid #f4c542;
+  background:
+    linear-gradient(90deg, rgba(244, 197, 66, 0.08) 0%, rgba(244, 197, 66, 0) 30%),
+    var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body[data-page="about"] .about-cta-band__copy h2 {
+  max-width: 15ch;
+}
+
+body[data-page="about"] .about-cta-band__copy p:last-child,
+body[data-page="about"] .about-cta-band__actions p {
+  margin-bottom: 0;
+}
+
+body[data-page="about"] .about-cta-band__actions {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--color-border);
 }
 
 @media (max-width: 1000px) {
-  body[data-page="about"] .about-grid {
+  body[data-page="about"] .about-hero__grid,
+  body[data-page="about"] .about-system__grid,
+  body[data-page="about"] .about-cta-band {
     grid-template-columns: 1fr;
+  }
+
+  body[data-page="about"] .about-system__matrix {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="about"] .about-principle-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+
+  body[data-page="about"] .about-principle-row--offset {
+    margin-left: 0;
+  }
+
+  body[data-page="about"] .about-principle-row__index {
+    width: 56px;
+    height: 56px;
+    font-size: 1.05rem;
+  }
+
+  body[data-page="about"] .about-cta-band__actions {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
   }
 }

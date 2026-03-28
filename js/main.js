@@ -67,3 +67,13 @@ if (yearTarget) {
 if (window.lucide) {
   window.lucide.createIcons();
 }
+
+if (window.AOS) {
+  window.AOS.init({
+    duration: 700,
+    easing: "ease-out-cubic",
+    once: true,
+    offset: 24,
+    mirror: false
+  });
+}
