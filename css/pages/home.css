@@ -1,0 +1,26 @@
+body[data-page="home"] .hero-copy h1 {
+  max-width: 12ch;
+  font-size: clamp(1.8rem, 4.8vw, 3.8rem);
+}
+
+body[data-page="home"] .hero-visual {
+  min-height: 380px;
+}
+
+body[data-page="home"] .service-preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 720px) {
+  body[data-page="home"] .hero-copy h1 {
+    font-size: clamp(1.95rem, 8.8vw, 3rem);
+  }
+
+  body[data-page="home"] .hero-visual {
+    min-height: 240px;
+  }
+
+  body[data-page="home"] .service-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+.legal-hero {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.legal-card h2 {
+  margin-bottom: 0.75rem;
+}

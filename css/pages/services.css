@@ -1,0 +1,21 @@
+body[data-page="services"] .service-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body[data-page="services"] .service-card h2 {
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 980px) {
+  body[data-page="services"] .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-page="services"] .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
