@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/bundle.css" />
     <link
@@ -44,7 +45,26 @@
 
         <nav class="desktop-nav" aria-label="Primary">
           <a href="index.html" aria-current="page">Home</a>
-          <a href="services.html">Services</a>
+          <div class="nav-dropdown">
+            <a class="nav-dropdown__trigger" href="services.html">
+              <span>Services</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="nav-dropdown__menu" aria-label="Service pages">
+            <a href="raccoon-removal.html">Raccoon Removal</a>
+            <a href="skunk-removal.html">Skunk Removal</a>
+            <a href="squirrel-removal.html">Squirrel Removal</a>
+            <a href="bat-removal.html">Bat Removal</a>
+            <a href="opossum-removal.html">Opossum Removal</a>
+            <a href="groundhog-removal.html">Groundhog Removal</a>
+            <a href="mole-control.html">Mole Control</a>
+            <a href="mice-removal.html">Mice Removal</a>
+            <a href="rat-removal.html">Rat Removal</a>
+            <a href="bird-control.html">Bird Control</a>
+            <a href="snake-removal.html">Snake Removal</a>
+            <a href="fox-removal.html">Fox Removal</a>
+            </div>
+          </div>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -94,14 +114,30 @@
         </div>
 
         <nav class="mobile-nav" aria-label="Mobile">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="services.html">Services</a>
-          <a href="raccoon-removal.html">Raccoon Removal</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Use</a>
-        </nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <details class="mobile-nav-group">
+          <summary>Services</summary>
+          <div class="mobile-nav-group__links">
+            <a href="services.html">All Services</a>
+            <a href="raccoon-removal.html">Raccoon Removal</a>
+            <a href="skunk-removal.html">Skunk Removal</a>
+            <a href="squirrel-removal.html">Squirrel Removal</a>
+            <a href="bat-removal.html">Bat Removal</a>
+            <a href="opossum-removal.html">Opossum Removal</a>
+            <a href="groundhog-removal.html">Groundhog Removal</a>
+            <a href="mole-control.html">Mole Control</a>
+            <a href="mice-removal.html">Mice Removal</a>
+            <a href="rat-removal.html">Rat Removal</a>
+            <a href="bird-control.html">Bird Control</a>
+            <a href="snake-removal.html">Snake Removal</a>
+            <a href="fox-removal.html">Fox Removal</a>
+          </div>
+        </details>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
 
         <div class="mobile-menu__meta">
           <p>
@@ -520,3 +556,4 @@
     </footer>
   </body>
 </html>
+
